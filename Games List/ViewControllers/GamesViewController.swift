@@ -18,6 +18,11 @@ class GamesViewController: UIViewController {
     }
 
     func setupUI(){
+        
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.backgroundColor = appThemeColor
+        self.navigationController?.navigationBar.scrollEdgeAppearance = navigationBarAppearance
+        
         gamesTableView.dataSource = self
         gamesTableView.delegate = self
         gamesTableView.allowsSelection = false
@@ -26,7 +31,8 @@ class GamesViewController: UIViewController {
         
         //Setup the loading activity indicator
         activityView.hidesWhenStopped = true
-        activityView.frame = CGRect(x: view.frame.midX - 25, y: view.frame.midY - 25, width: 50, height: 50)        
+        activityView.frame = CGRect(x: view.frame.midX - 25, y: view.frame.midY - 25, width: 50, height: 50)
+        activityView.accessibilityIdentifier = "loadingSpinner"
         activityView.startAnimating()
         self.view.addSubview(activityView)
         
@@ -37,6 +43,7 @@ class GamesViewController: UIViewController {
         GamesViewModel.shared.fetchGames()
     }
 }
+
 extension GamesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,7 +59,6 @@ extension GamesViewController: UITableViewDataSource, UITableViewDelegate {
                 updateGameCell.gameImageView.image = gameImage
             }
         }
-        
         return gamesCell
     }
     
@@ -71,4 +77,3 @@ extension GamesViewController: FetchGamesDelegate {
         }
     }
 }
-

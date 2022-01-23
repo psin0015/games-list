@@ -21,6 +21,7 @@
 		DBAA590A279D6AAB0014362B /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA5909279D6AAB0014362B /* Games.swift */; };
 		DBAA590F279D74810014362B /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA590E279D74810014362B /* GamesViewModel.swift */; };
 		DBAA5914279D74970014362B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA5913279D74970014362B /* NetworkClient.swift */; };
+		DBAA5921279D93670014362B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DBAA5920279D93670014362B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		DBAA5909279D6AAB0014362B /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		DBAA590E279D74810014362B /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
 		DBAA5913279D74970014362B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DBAA5920279D93670014362B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		DBAA58B1279D65390014362B = {
 			isa = PBXGroup;
 			children = (
+				DBAA5920279D93670014362B /* README.md */,
 				DBAA58BC279D65390014362B /* Games List */,
 				DBAA58D3279D653D0014362B /* Games ListTests */,
 				DBAA58DE279D653D0014362B /* Games ListUITests */,
@@ -307,6 +310,7 @@
 			files = (
 				DBAA58CA279D653D0014362B /* LaunchScreen.storyboard in Resources */,
 				DBAA58C7279D653D0014362B /* Assets.xcassets in Resources */,
+				DBAA5921279D93670014362B /* README.md in Resources */,
 				DBAA58C5279D65390014362B /* Main.storyboard in Resources */,
 				DBAA58FA279D665E0014362B /* GameTableViewCell.xib in Resources */,
 			);
