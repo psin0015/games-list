@@ -19,6 +19,8 @@
 		DBAA58FA279D665E0014362B /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBAA58F8279D665E0014362B /* GameTableViewCell.xib */; };
 		DBAA5905279D6A1F0014362B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA5904279D6A1F0014362B /* Constants.swift */; };
 		DBAA590A279D6AAB0014362B /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA5909279D6AAB0014362B /* Games.swift */; };
+		DBAA590F279D74810014362B /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA590E279D74810014362B /* GamesViewModel.swift */; };
+		DBAA5914279D74970014362B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA5913279D74970014362B /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		DBAA58F8279D665E0014362B /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 		DBAA5904279D6A1F0014362B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DBAA5909279D6AAB0014362B /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		DBAA590E279D74810014362B /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
+		DBAA5913279D74970014362B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				DBAA5904279D6A1F0014362B /* Constants.swift */,
+				DBAA5913279D74970014362B /* NetworkClient.swift */,
 			);
 			path = "Helper Classes";
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 		DBAA58F4279D65F00014362B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DBAA590E279D74810014362B /* GamesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -330,9 +336,11 @@
 				DBAA5905279D6A1F0014362B /* Constants.swift in Sources */,
 				DBAA58C2279D65390014362B /* GamesViewController.swift in Sources */,
 				DBAA58BE279D65390014362B /* AppDelegate.swift in Sources */,
+				DBAA590F279D74810014362B /* GamesViewModel.swift in Sources */,
 				DBAA590A279D6AAB0014362B /* Games.swift in Sources */,
 				DBAA58C0279D65390014362B /* SceneDelegate.swift in Sources */,
 				DBAA58F9279D665E0014362B /* GameTableViewCell.swift in Sources */,
+				DBAA5914279D74970014362B /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kindred.gameslist.Games-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -535,7 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kindred.gameslist.Games-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
